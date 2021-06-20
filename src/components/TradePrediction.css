@@ -1,0 +1,392 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tradePredictionCointainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  width: 75%;
+  row-gap: 2%;
+  column-gap: 2%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 24%;
+}
+.tradePredictionCointainer div {
+  background-color: rgb(218, 216, 216);
+  padding: 20px;
+  border-radius: 10px;
+}
+.tradeitem1 {
+  grid-column: 1/ 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+.tradeitem2 {
+  grid-column: 1/3;
+  position: relative;
+}
+.tradeitem4 {
+  grid-row: 3/5;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: -20%;
+  position: relative;
+}
+
+/* Soon cut away css part */
+.tradeitem1 .selectionDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.tradeitem1 .selectionDiv select {
+  padding: 2%;
+  width: 20%;
+  font-weight: 700;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: rgb(46, 46, 226);
+  color: rgb(233, 232, 232);
+  outline: none;
+  cursor: pointer;
+}
+.tradeitem1 button {
+  padding: 1%;
+  min-width: 10%;
+  font-weight: 700;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: rgb(46, 46, 226);
+  color: rgb(233, 232, 232);
+  outline: none;
+  cursor: pointer;
+}
+.tradeitem1 .selectionDiv select:hover {
+  background-color: white;
+  color: rgb(46, 46, 226);
+}
+.tradeitem1 button:hover {
+  background-color: green;
+}
+.tradeitem1 .showTradeItem1Details {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tradeitem1 .showTradeItem1Details .image {
+  position: absolute;
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  border-radius: 100%;
+  /* border-color: black; */
+  /* border-width: 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -11%;
+}
+.tradeitem1 .showTradeItem1Details .image img {
+  height: 100%;
+  width: 100%;
+}
+.tradeitem1 .showTradeItem1Details h2 {
+  position: absolute;
+  top: 5%;
+  font-size: 40px;
+  left: 17%;
+  color: rgb(46, 46, 226);
+  text-shadow: 1px 1px 2px rgb(36, 36, 36);
+}
+.tradeitem1 .showTradeItem1Details .openSelectBtn {
+  position: absolute;
+  background-color: rgb(46, 46, 226);
+  height: 40px;
+  width: 40px;
+  border-style: solid;
+  border-radius: 100%;
+  display: flex;
+  border-width: 5px;
+  border-color: rgb(233, 232, 232);
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 10%;
+  box-shadow: 1px 1px 5px black;
+  font-size: 13px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+.tradeitem1 .showTradeItem1Details .additionalDataDiv {
+  position: relative;
+  top: 25%;
+  width: 90%;
+  left: 5%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: transparent;
+}
+.tradeitem1 .showTradeItem1Details .additionalDataDiv div {
+  font-size: 20px;
+  font-family: cursive;
+  bottom: 0;
+  background-color: transparent;
+  margin-bottom: -7%;
+}
+.tradeitem1 .showTradeItem1Details .additionalDataDiv span {
+  position: absolute;
+  right: 10%;
+}
+.tradeitem2 h2 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 900;
+  /* position: absolute;
+  top: 5%;
+  left: 10%; */
+  color: rgb(46, 46, 226);
+  /* text-shadow: 1px 1px 1px black; */
+}
+.tradeitem2 .percentDiv {
+  /* position: relative; */
+  top: 0;
+  font-size: 19px;
+  /* color: red; */
+  font-weight: 700;
+  font-family: cursive;
+  /* background-color: rgb(82, 81, 81); */
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tradeitem2 .priceDiv {
+  position: relative;
+  top: -10%;
+  font-size: 19px;
+  /* color: red; */
+  font-weight: 700;
+  font-family: cursive;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: -11%;
+}
+
+/* .tradeitem2 .percentageChange{
+
+}
+.tradeitem2 .priceChange{
+
+} */
+
+@media screen and (max-width:872px){
+.tradeitem1 .selectionDiv select {
+  padding: 2.5%;
+  width: 30%;
+  font-size: 13px;
+
+}
+
+.tradeitem1 .selectionDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.tradeitem1 .showTradeItem1Details .image {
+  height: 80px;
+  width: 80px;
+  left: 0;
+}
+.tradeitem1 .showTradeItem1Details h2 {
+  font-size: 25px;
+  left: 20%;
+}
+.tradeitem1 .showTradeItem1Details .additionalDataDiv div {
+  font-size: 15px;
+  margin-left: -20%;
+}
+.tradeitem1 .showTradeItem1Details .additionalDataDiv span {
+  right: 0%;
+}
+.tradeitem2 h2 {
+  font-size: 15px;
+}
+.tradeitem2 .percentDiv {
+  font-size: 14px;
+}
+.tradeitem2 .priceDiv {
+  font-size: 14px;
+  width: 100%;
+}
+}
